@@ -17,12 +17,39 @@ This project compares five pathway/gene-set resources:
 The resources were harmonized into a common pathway-gene representation and
 organized into cross-resource pathway families for downstream breast cancer analysis.
 
-## Main Dataset
+## Datasets
 
-- TCGA-BRCA: 974 tumors
-- Molecular data: RNA expression + CNV
-- Outcome: PAM50 breast cancer subtype
-- Independent validation: CPTAC-BRCA, n = 122
+### 1. TCGA-BRCA
+Primary breast cancer cohort used for pathway-resource comparison,
+PAM50 subtype association, predictive analysis, and interpretation stability.
+
+- Samples: 974 tumors
+- Omics: RNA expression + CNV
+- Labels: PAM50 molecular subtypes
+
+### 2. CPTAC-BRCA
+Independent breast cancer cohort used for external biological validation
+and cross-cohort predictive sensitivity analysis.
+
+- Samples: 122 tumors
+- Omics: RNA expression + CNV
+- Molecular subtype information available
+
+### 3. TCGA-UCEC
+Exploratory cross-disease cohort used to evaluate whether selected
+BRCA-PRISM pathway-family signals extend beyond breast cancer.
+
+- Samples: 507 tumors
+- Cancer type: Uterine Corpus Endometrial Carcinoma
+- Omics: RNA expression + CNV
+- Molecular subtypes:
+  - POLE-ultramutated
+  - MSI-hypermutated
+  - Copy-number-low
+  - Copy-number-high
+- Evaluated pathway families:
+  - F0006 — DNA replication
+  - F0025 — Endometrial cancer
 
 ## BRCA-PRISM Framework
 
